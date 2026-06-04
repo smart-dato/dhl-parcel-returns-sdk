@@ -1,10 +1,14 @@
 {
     "name": "smart-dato/dhl-parcel-returns-sdk",
-    "description": "This is my package dhl-parcel-returns-sdk",
+    "description": "Laravel SDK for the DHL Parcel DE Returns API",
     "keywords": [
         "SmartDato",
         "laravel",
-        "dhl-parcel-returns-sdk"
+        "dhl",
+        "dhl-parcel",
+        "returns",
+        "shipping",
+        "saloon"
     ],
     "homepage": "https://github.com/smart-dato/dhl-parcel-returns-sdk",
     "license": "MIT",
@@ -17,8 +21,10 @@
     ],
     "require": {
         "php": "^8.4",
-        "spatie/laravel-package-tools": "^1.16",
-        "illuminate/contracts": "^11.0||^12.0||^13.0"
+        "illuminate/contracts": "^11.0||^12.0||^13.0",
+        "saloonphp/saloon": "^4.0",
+        "spatie/laravel-data": "^4.20",
+        "spatie/laravel-package-tools": "^1.16"
     },
     "require-dev": {
         "laravel/pint": "^1.14",
@@ -35,8 +41,7 @@
     },
     "autoload": {
         "psr-4": {
-            "SmartDato\\DhlParcelReturns\\": "src/",
-            "SmartDato\\DhlParcelReturns\\Database\\Factories\\": "database/factories/"
+            "SmartDato\\DhlParcelReturns\\": "src/"
         }
     },
     "autoload-dev": {
